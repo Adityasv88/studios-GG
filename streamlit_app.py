@@ -1,18 +1,38 @@
 import streamlit as st
 
-# Define pages as functions
+# Page 1: Introduction about the app
 def intro():
-    st.title("Deep Learning App")
-    st.header("Welcome to the Deep Learning App")
+    st.title("A Comprehensive Deep Learning Solution for E-commerce")
     st.write("""
-        This app allows you to interact with different deep learning models. 
-        Please choose a task from the sidebar to proceed:
-        - Tabular Data Classification
-        - Regression on Tabular Data
-        - Image Classification
-        - Image Segmentation
-        - Text Classification
+    Welcome to our Deep Learning Application. This project is designed to showcase the implementation of several advanced deep learning models across a variety of tasks, including:
+    
+    - **Tabular Data Classification**: Classify data based on structured datasets.
+    - **Regression on Tabular Data**: Predict continuous variables from structured datasets.
+    - **Image Classification**: Classify images into predefined categories.
+    - **Image Segmentation**: Segment images into meaningful parts or objects.
+    - **Text Classification**: Categorize text data into different classes.
+    
+    Our goal is to provide an intuitive and interactive way to engage with different deep learning models through a user-friendly interface.
+    
+    ### How to Use
+    Use the navigation sidebar to explore each feature of this app. Each section allows you to upload your own data (e.g., tabular data, images, or text) and interact with the respective deep learning model.
+    
+    ### Technologies Used
+    - **Streamlit** for building the app interface.
+    - **Deep Learning** models built with libraries like **TensorFlow** and **PyTorch**.
+    - Data handling and preprocessing using **Pandas**, **NumPy**, and other relevant libraries.
+    
+    We hope you find this app useful in exploring and learning more about deep learning techniques.
     """)
+
+    st.write("### Credits")
+    st.write("This app was developed by:")
+    st.write("- **Aditya Vellore**")
+    st.write("- **Mandar Rele**")
+    st.write("- **Aditya Nair**")
+    
+    st.write("Thank you for using our application!")
+
 
 def tabular_classification():
     st.title("Tabular Data Classification")
